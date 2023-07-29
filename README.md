@@ -26,7 +26,7 @@ I'm currently exploring:
 
 <!-- Provide links to your social media and professional profiles -->
 - Instagram: [medyassinef](https://www.instagram.com/medyassinef/)
-- Discord: (https://discord.gg/mhzEKNw9)
+- Discord: [Discord](https://discord.gg/mhzEKNw9)
 - Email: ynabm2017@gmail.com
 
 Feel free to explore my repositories, and don't forget to ⭐️ your favorite projects!
