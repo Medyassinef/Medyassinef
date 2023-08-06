@@ -1,32 +1,61 @@
-# Medyassinef - GitHub Profile
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your GitHub Profile</title>
+</head>
+<body>
+  <div class="container">
+    <div class="spinner"></div>
+    <div class="moving-box"></div>
+  </div>
 
-<!-- Your introduction -->
-Hello there! 👋 I'm MED YASSINE, a passionate developer and open-source enthusiast. Welcome to my GitHub profile!
+  <script>
+    const spinner = document.querySelector('.spinner');
+    const movingBox = document.querySelector('.moving-box');
 
-## 🔧 Technologies & Tools
+    function animateBox() {
+      movingBox.style.transform = 'translateX(200px)';
+      setTimeout(() => {
+        movingBox.style.transform = 'translateX(0)';
+        setTimeout(animateBox, 1000);
+      }, 1000);
+    }
 
-<!-- List the technologies and tools you are familiar with -->
-- Programming Languages: C, Python, Assembly, Bash
-- Tools & Platforms:VS Code, Git, ESXI, ProxMox, Linux, Raspberry Pi, Arduino, PIC16F
+    animateBox();
+  </script>
 
-## 🌱 Currently Learning
+  <style>
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+    }
 
-I'm currently exploring:
-- Diving into the world of **cloud computing** with **AWS** services, such as **EC2**, **S3**, and **Lambda**.
-- Exploring the world of **Networking** and preparing for the **CCNA 200-301 cert**.
+    .spinner {
+      width: 50px;
+      height: 50px;
+      background-color: #3498db;
+      animation: spin 2s linear infinite;
+      margin-right: 20px;
+    }
 
-## 📈 GitHub Stats
+    .moving-box {
+      width: 50px;
+      height: 50px;
+      background-color: #e74c3c;
+      transition: transform 1s ease;
+    }
 
-<!-- Use shields.io to display your GitHub stats -->
-![GitHub Stats](https://img.shields.io/github/followers/Medyassinef?label=Followers&style=social)
-![GitHub Stats](https://img.shields.io/github/stars/Medyassinef/Medyassinef?style=social)
-
-
-## 📫 How to Reach Me
-
-<!-- Provide links to your social media and professional profiles -->
-- Instagram: [medyassinef](https://www.instagram.com/medyassinef/)
-- Discord: [Discord](https://discord.gg/mhzEKNw9)
-- Email: ynabm2017@gmail.com
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+</body>
+</html>
 
 Feel free to explore my repositories, and don't forget to ⭐️ your favorite projects!
